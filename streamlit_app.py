@@ -16,3 +16,7 @@ with st.form('my_form'):
     st.warning('Please enter your OpenAI API key!', icon='⚠')
   if submitted and openai_api_key.startswith('sk-'):
     generate_response(text)
+
+
+# Display an image
+st.image('https://github.com/tpd911/langchain-quickstart/raw/master/diagram.jpg', caption='Overview of the App', use_column_width=True)
